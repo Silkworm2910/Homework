@@ -1,10 +1,10 @@
 package lesson2.lesson;
 
-import java.util.Scanner;
+import java.util.Scanner;//импорт сканнера
 public class Lesson2 {
 
     public static void main(String[] args) {
-       /* Scanner in = new Scanner(System.in);
+ /*     Scanner in = new Scanner(System.in);
         System.out.println("Введите код. Трехзначное число");//123
         int code = in.nextInt();
         if (code == 123) {
@@ -12,10 +12,10 @@ public class Lesson2 {
         } else if (code == 345) {//дополнительный else if
             System.out.println("Вы вошли как участник");
         } else System.out.println("Вы не вошли");
+*/
 
-
-        //---------------
-        int a = 5;
+       //---------------
+/*        int a = 5;
         int b = 7;
         if (a == 5) {
             System.out.println("Совпадение найдено a");
@@ -23,9 +23,9 @@ public class Lesson2 {
             System.out.println("Совпадение найдено b");
         } else {
             System.out.println("Совпадений нет");
-        }
-
-        // ---------- switch оператор выбора
+       }
+*/
+  /*      // ---------- switch оператор выбора
         // большой приз 333333
         //средний 333334 333335
         // большой 333344 333355 333366
@@ -51,18 +51,18 @@ public class Lesson2 {
         }
         System.out.println("Результат " + prize);
 
-        //----------------
+   */     //----------------
         // while
-        int messageCount = 5;
-        // while (слуовие) {тц}
+   /*     int messageCount = 5;
+        // while (условие) {тц}
 
         while(messageCount > 0) {
             System.out.println("Сообщение № " + messageCount);
             messageCount --;
         }
-
+*/
        //=======================
-        Scanner in3;
+  /*      Scanner in3;
         System.out.println("ВВедите код. Трехзначное чсило");
         int code2;
         while (true) {
@@ -81,9 +81,9 @@ public class Lesson2 {
                 System.out.println("Повторите попытку");
             }
             }
-
+*/
         //=====
-        //уикл с постусловием do while
+   /*     //цикл с постусловием do while
         do {
             System.out.println("Первая итерация");
         } while (false);
@@ -96,14 +96,17 @@ public class Lesson2 {
                 System.out.println("i = " + i);
             }
         }
-        //======
-        for (int i = 0; i < 3; i++){
+  */
+   /*     //======
+        for (int i = 0; i < 3; i++) {
             System.out.println("Внешний цикл. i = " + i);
             for (int j = 0; j < 15; j++) {
-                System.out.println("j = " +j);
-                if (j == 5) break ;
+                System.out.println("j = " + j);
+                if (j == 5) break;
+            }
+        }
 */
-       //------------
+      //------------
       outer:  for (int i = 0; i < 3; i++){
             System.out.println("Внешний цикл. i = " + i);
             for (int j = 0; j < 15; j++) {
@@ -112,10 +115,4 @@ public class Lesson2 {
             }
         }
         }
-
-
     }
-
-
-
-
