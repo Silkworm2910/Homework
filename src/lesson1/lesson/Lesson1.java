@@ -1,3 +1,5 @@
+package lesson1.lesson;
+
 public class Lesson1 {
     public static void main(String[] args) {
 //        psvm
@@ -6,7 +8,7 @@ public class Lesson1 {
         многострочный комментарий ctrl+shift/
          */
 //sout
-        System.out.println("Lesson1");
+        System.out.println("lesson1.lesson.Lesson1");
         //объявление переменных
 //        типДанных имяПеременной;
         // имя переменной со строчного символа, символы, цифры, нп.

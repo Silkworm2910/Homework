@@ -1,3 +1,5 @@
+package lesson1.hw1;
+
 public class Hw1_7 {
     public static void main(String[] args) {
         int y=448;
