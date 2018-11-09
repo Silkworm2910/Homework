@@ -1,7 +1,5 @@
 package addtasks.applegarden;
 
-import lesson4.Good;
-
 import java.util.Arrays;
 
 public class Tree {
