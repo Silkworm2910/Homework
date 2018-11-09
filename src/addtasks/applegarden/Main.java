@@ -2,6 +2,9 @@ package addtasks.applegarden;
 
 public class Main {
     public static void main(String[] args) {
+
+        Garden garden = new Garden();
+        Tree tree1 = new Tree();
         Apple apple1 = new Apple();
         Apple apple2 = new Apple();
         apple1.setAge(28);
@@ -14,15 +17,15 @@ public class Main {
         apple2.setSize(5);
         apple2.setSpoiled(0);
         apple2.setOnTheTree(1);
+        tree1.addApples(apple1);
+        tree1.addApples(apple2);
+        tree1.showApples();
         apple1.toFall();
         apple2.toFall();
         apple1.toSpoil();
         apple2.toSpoil();
-        Garden garden = new Garden();
-        garden.addTrees();
+        tree1.showApples();
+        garden.addTrees(tree1);
         garden.showTrees();
-
-
-
     }
 }

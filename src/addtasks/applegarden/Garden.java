@@ -1,7 +1,5 @@
 package addtasks.applegarden;
 
-import java.util.Arrays;
-
 public class Garden {
     private int size = 3;
     public Tree[] trees = new Tree[size];
@@ -14,10 +12,10 @@ public class Garden {
         return trees;
     }
 
-    public void addTrees() {
+    public void addTrees(Tree tree) {
         for (int i = 0; i < trees.length; i++) {
             if (trees[i] == null) {
-                trees[i] = trees[i];
+                trees[i] = tree;
                 return;
             }
         }
