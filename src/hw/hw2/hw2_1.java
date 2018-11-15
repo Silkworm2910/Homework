@@ -46,8 +46,8 @@ public class hw2_1 {
             }
         }
         //Сортировка методом вставки Insertsort
-//        for (int p = 1; p<size; p++){
-//            for(int j1 = p; j1>0 && numbs[j1 - 1]>numbs[j1]; j1--){
+//        for (int animals = 1; animals<size; animals++){
+//            for(int j1 = animals; j1>0 && numbs[j1 - 1]>numbs[j1]; j1--){
 //                counter++;
 //                int tmp = numbs[j1 - 1];
 //                numbs[j1 - 1] = numbs[j1];
