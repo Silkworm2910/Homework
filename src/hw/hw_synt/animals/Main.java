@@ -3,7 +3,7 @@ package hw.hw_synt.animals;
 public class Main {
     public static void main(String[] args) {
        /* Задача 5  (синтаксис классов)
-        Создать классы Dog, Cat и Mouse.
+        Создать классы Dog, Artifact и Mouse.
         Реализовать интерфейсы (Movable, Eatable, Eat ) в классах, учитывая что:
         - Кот может передвигаться, может кого-то съесть и может быть сам съеден.
         - Мышь может передвигаться и может быть съедена.
