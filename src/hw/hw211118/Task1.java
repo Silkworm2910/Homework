@@ -23,6 +23,17 @@ public class Task1 {
 
             System.out.println(count);
 
+           /* Dasha Burtova
+            14:02 24 дек.
+                    Закрывать ресурсы необходимо в блоке
+            finally {
+                in.close();
+                out.close();
+                reader.close();
+            }
+            или использовать try with resource
+            try(открытие ресурсов) для автоматического закрытия*/
+
             in.close();
             out.close();
             reader.close();

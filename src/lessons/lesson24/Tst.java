@@ -1,4 +1,4 @@
-package lessons.lesson24needtopull;
+package lessons.lesson24;
 
 import java.util.concurrent.*;
 
