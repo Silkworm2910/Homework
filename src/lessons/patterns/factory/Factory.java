@@ -35,7 +35,7 @@ public class Factory {
             Handler handler = null;
             if (string.endsWith("txt")) {
                 handler = new TxtHandler();
-            } else if (string.endsWith("xml")) {
+            } else if (string.endsWith("xml_needtopull")) {
                 handler = new XmlHandler();
             }
             return handler;

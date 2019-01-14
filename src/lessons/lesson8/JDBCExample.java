@@ -20,8 +20,6 @@ public class JDBCExample {
            int row = statement.executeUpdate(sql);
             System.out.println(row);
         }
-
-
     }
 
     //вставить данные в таблицу
