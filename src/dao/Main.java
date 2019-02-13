@@ -8,52 +8,41 @@ import java.sql.*;
 public class Main {
 
 
-/*public static void selectData() throws SQLException {
-    String sql = "SELECT * FROM User;";
-    try (Connection connection =
-                 DriverManager.getConnection("jdbc:sqlite:lesson8.db")) {
-        Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery(sql);
-        while (resultSet.next()) {
-            int i = resultSet.getInt("id");
-            String str = resultSet.getString("login");
-            System.out.println("id = " + i);
-            System.out.println("login = " + str);
-        }
-    }
-}*/
     public static void main(String[] args) {
+        User user1 = new User();
+        user1.setId(1);
+        user1.setLogin("User1");
+
+        User user2 = new User();
+        user2.setId(2);
+        user2.setLogin("User2");
+
+        UserDao userDao = new UserDao();
         try {
-            String sql = "CREATE TABLE IF NOT EXISTS User (" +
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
-                    "login TEXT NOT NULL);";
-
-            String insert = "INSERT INTO User (id, login) VALUES (?, ?);";
-            String getAll = "SELECT * FROM User;";
-            String getById = "SELECT * FROM User WHERE id=?;";
-            String update = "UPDATE User SET id=?, login=? WHERE id=?";
-            String delete = "DELETE FROM User WHERE id=?;";
-
-
-            DriverManager.registerDriver((new JDBC()));
-            try (Connection connection =
-                         DriverManager.getConnection("jdbc:sqlite:lesson8.db")) {
-                Statement statement = connection.createStatement();
-                int row = statement.executeUpdate(sql);
-                System.out.println(row);
-            }
-            UserDao user1 = new UserDao(125, "125");
-            UserDao user2 = new UserDao(135, "135");
-            UserDao user3 = new UserDao(135, "135");
-            UserDao user4 = new UserDao(145, "145");
-            user1.add();
-            user2.add();
-            user3.add();
-            user4.add();
+            Connectionnn.createTable();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        userDao.add(user1);
+        userDao.add(user2);
+        userDao.getAll();
 
+        userDao.update(user1);
+        userDao.update(user2);
+
+        userDao.delete(user1);
+
+        Article article1 = new Article();
+
+        article1.setId(1);
+        article1.setUserId(1);
+        article1.setTitle("article1");
+
+        ArticleDao articleDao = new ArticleDao();
+        articleDao.add(article1);
+        articleDao.getAll();
+        articleDao.update(article1);
+        articleDao.delete(article1);
     }
 }
 

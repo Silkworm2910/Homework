@@ -1,13 +1,8 @@
 package dao;
 
-public class User {
+public class User extends ObjClass {
     int id;
     String login;
-
-    public User(int id, String login) {
-        this.id = id;
-        this.login = login;
-    }
 
     public int getId() {
         return id;

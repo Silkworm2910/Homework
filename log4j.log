@@ -1,0 +1,2 @@
+2018-12-24 20:48:25 INFO  Log4jLoggedProgramm:17 - Started with args: []
+2018-12-24 20:48:25 ERROR Log4jLoggedProgramm:21 - Fatal error: / by zero

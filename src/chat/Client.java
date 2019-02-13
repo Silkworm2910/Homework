@@ -18,6 +18,8 @@ public class Client {
     public void start() throws IOException {
         System.out.println("Enter your name");
         String name = in.nextLine();
+        Message reg = new Message(name, "is joined");
+        ioConnection.send(reg);
 
         Thread reader = new Thread(new Reader(ioConnection));
         reader.start();

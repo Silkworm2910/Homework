@@ -1,15 +1,9 @@
 package dao;
 
-public class Article {
+public class Article extends ObjClass {
     int id;
     String title;
     int userId;
-
-    public Article(int id, String title, int userId) {
-        this.id = id;
-        this.title = title;
-        this.userId = userId;
-    }
 
     public int getId() {
         return id;
